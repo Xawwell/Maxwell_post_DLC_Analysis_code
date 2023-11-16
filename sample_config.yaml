@@ -1,0 +1,192 @@
+    # Project definitions (do not edit)
+Task: Multi_Shelter_Choice
+scorer: Maxwell
+date: Oct28
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: G:/Maxwell/DLC/Multi_Shelter_Choice-Maxwell-2023-10-28
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  G:\Maxwell\Corrected_Video\Maxwell_mouseid-1120292_audiotory-0'.avi:
+    crop: 0, 1024, 0, 1024
+  G:\Maxwell\Corrected_Video\Maxwell_mouseid-1119623_audiotory-0'.avi:
+    crop: 0, 1024, 0, 1024
+  G:\Maxwell\Corrected_Video\Maxwell_mouseid-1119976_audiotory-31'.avi:
+    crop: 0, 1024, 0, 1024
+bodyparts:
+- nose
+- headcenter
+- neck
+- rightear
+- leftear
+- lefthip
+- righthip
+- leftside
+- rightside
+- bodycenter
+- tailbase
+- t1
+- t2
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - lefthip
+  - bodycenter
+- - leftear
+  - leftside
+- - headcenter
+  - rightear
+- - righthip
+  - bodycenter
+- - tailbase
+  - t1
+- - leftear
+  - rightside
+- - lefthip
+  - righthip
+- - neck
+  - rightside
+- - nose
+  - neck
+- - nose
+  - leftside
+- - rightside
+  - bodycenter
+- - leftear
+  - t2
+- - lefthip
+  - rightside
+- - headcenter
+  - neck
+- - leftear
+  - bodycenter
+- - neck
+  - bodycenter
+- - righthip
+  - tailbase
+- - tailbase
+  - t2
+- - rightside
+  - tailbase
+- - nose
+  - leftear
+- - rightear
+  - leftear
+- - neck
+  - tailbase
+- - bodycenter
+  - tailbase
+- - rightear
+  - bodycenter
+- - neck
+  - rightear
+- - nose
+  - lefthip
+- - t1
+  - t2
+- - leftside
+  - bodycenter
+- - nose
+  - headcenter
+- - neck
+  - leftside
+- - lefthip
+  - tailbase
+- - righthip
+  - rightside
+- - rightear
+  - t2
+- - leftear
+  - righthip
+- - lefthip
+  - leftside
+- - rightear
+  - rightside
+- - headcenter
+  - leftside
+- - leftside
+  - rightside
+- - neck
+  - leftear
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 4
+alphavalue: 0.7
+colormap: plasma
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
